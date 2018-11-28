@@ -1,4 +1,6 @@
+
 package models;
+
 
 public class Extension {
     private String extender;
@@ -19,4 +21,6 @@ public class Extension {
     public void setStereotype(Stereotype stereotype) {
         this.stereotype = stereotype;
     }
+    
+    
 }

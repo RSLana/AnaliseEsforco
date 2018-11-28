@@ -1,3 +1,4 @@
+
 package models;
 
 import java.util.ArrayList;
@@ -19,6 +20,15 @@ public class OwnedMember {
     private String general;
     private String client;
     private String supplier;
+    private Extension xmiExtension;
+
+    public Extension getXmiExtension() {
+        return xmiExtension;
+    }
+
+    public void setXmiExtension(Extension xmiExtension) {
+        this.xmiExtension = xmiExtension;
+    }
     private ArrayList<OwnedEnd> ownedEnds;
     private ArrayList<MemberEnd> memberEnds;
 

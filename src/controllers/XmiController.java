@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package controllers;
 
 import models.*;
@@ -7,12 +12,15 @@ import com.thoughtworks.xstream.security.AnyTypePermission;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
-public class XmiController {
+/**
+ *
+ * @author ariel
+ */
+public class XMIcontroller {
 
     private XStream xstream;
 
-    public XmiController() {
+    public XMIcontroller() {
         this.xstream = new XStream(new DomDriver());
         xstream.addPermission(AnyTypePermission.ANY);
 
@@ -89,6 +97,7 @@ public class XmiController {
         xstream.aliasAttribute(OwnedMember.class, "general", "general");
         xstream.aliasAttribute(OwnedMember.class, "client", "client");
         xstream.aliasAttribute(OwnedMember.class, "supplier", "supplier");
+        xstream.aliasField("xmi:Extension", OwnedMember.class, "xmiExtension");
         xstream.addImplicitCollection(OwnedMember.class, "ownedEnds", OwnedEnd.class);
         xstream.addImplicitCollection(OwnedMember.class, "memberEnds", MemberEnd.class);
 
@@ -125,4 +134,6 @@ public class XmiController {
     public String toXML(Root root) {
         return xstream.toXML(root);
     }
+
 }
+

@@ -1,4 +1,6 @@
+
 package models;
+
 
 public class Stereotype {
     private String value;
