@@ -1,4 +1,4 @@
-package models;
+package xmi;
 
 public class OwnedOperation {
     private String xmiId;

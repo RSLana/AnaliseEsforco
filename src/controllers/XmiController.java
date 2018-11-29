@@ -5,7 +5,17 @@
  */
 package controllers;
 
-import models.*;
+import xmi.Stereotype;
+import xmi.OwnedAttribute;
+import xmi.PackagedElement;
+import xmi.Extension;
+import xmi.OwnedOperation;
+import xmi.Documentation;
+import xmi.OwnedMember;
+import xmi.MemberEnd;
+import xmi.Model;
+import xmi.Root;
+import xmi.OwnedEnd;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.security.AnyTypePermission;
@@ -14,13 +24,13 @@ import java.io.FileReader;
 import java.io.IOException;
 /**
  *
- * @author ariel
+ * @author raj
  */
-public class XMIcontroller {
+public class XmiController {
 
     private XStream xstream;
 
-    public XMIcontroller() {
+    public XmiController() {
         this.xstream = new XStream(new DomDriver());
         xstream.addPermission(AnyTypePermission.ANY);
 

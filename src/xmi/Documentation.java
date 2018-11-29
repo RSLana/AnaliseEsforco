@@ -1,5 +1,5 @@
 
-package models;
+package xmi;
 
 public class Documentation {
     private String exporter;

@@ -1,5 +1,5 @@
 
-package models;
+package xmi;
 
 import java.util.ArrayList;
 
