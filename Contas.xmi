@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFneMoFv4zlJIA=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model">
+			<packagedElement xmi:id="AAAAAAFneLACvVD2y2k=" name="Gerente" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFneL50hFaGIKI=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLACvVD2y2k=" general="AAAAAAFneLGrsVJmZjU="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLAkw1EgSyU=" name="Emprestimo" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneMEttVrXrhw=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneMEttVrYTcQ=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLAkw1EgSyU=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneMEttVrZ5M4=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLC/pFF0qK8=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneMEttVrYTcQ="/>
+					<memberEnd xmi:idref="AAAAAAFneMEttVrZ5M4="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLBvaVFKGrc=" name="Prestacao" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneMD9n1pY+uo=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneMD9n1pZNW4=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFneLBvaVFKGrc=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneMD9n1paEtY=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLAkw1EgSyU=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneMD9n1pZNW4="/>
+					<memberEnd xmi:idref="AAAAAAFneMD9n1paEtY="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLC/pFF0qK8=" name="Cliente" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFneMCjcFoLpVA=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLC/pFF0qK8=" general="AAAAAAFneLKAWlLwoyM="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLDyXFGe1lA=" name="Conta" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneL87MVe0d9k=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneL87MVe1Oc0=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLDyXFGe1lA=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneL87MVe2JPE=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLACvVD2y2k=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneL87MVe1Oc0="/>
+					<memberEnd xmi:idref="AAAAAAFneL87MVe2JPE="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLEv4lHIna8=" name="Cartao" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneLEv41HJ+74=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneLEv41HK/ic=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLC/pFF0qK8=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneLEv5FHL/CU=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLDyXFGe1lA=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneLEv41HK/ic="/>
+					<memberEnd xmi:idref="AAAAAAFneLEv5FHL/CU="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLGrsVJmZjU=" name="Funcionario" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneL6mFFasibY=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneL6mFFatLhI=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLGrsVJmZjU=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneL6mFFau3T8=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLH1XVKrtVU=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneL6mFFatLhI="/>
+					<memberEnd xmi:idref="AAAAAAFneL6mFFau3T8="/>
+				</ownedMember>
+				<generalization xmi:id="AAAAAAFneMCGzFm+J2M=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLGrsVJmZjU=" general="AAAAAAFneLKAWlLwoyM="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLH1XVKrtVU=" name="Agencia" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneL7IwVcKvy0=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneL7IwVcLcU4=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLH1XVKrtVU=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneL7IwVcMx8s=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLACvVD2y2k=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneL7IwVcLcU4="/>
+					<memberEnd xmi:idref="AAAAAAFneL7IwVcMx8s="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLKAWlLwoyM=" name="Pessoa" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false"/>
+			<packagedElement xmi:id="AAAAAAFneLLOt1M1LqI=" name="ContaCorrente" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFneMKbDl16epg=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLLOt1M1LqI=" general="AAAAAAFneLDyXFGe1lA="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLMz7lN9+24=" name="Movimento" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneMGyQVxj9FQ=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneMGyQVxkUu8=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFneLMz7lN9+24=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneMGyQVxlQYQ=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLDyXFGe1lA=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneMGyQVxkUu8="/>
+					<memberEnd xmi:idref="AAAAAAFneMGyQVxlQYQ="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLN6HVPVxjU=" name="ContaPoupanca" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFneMJN/V0A5wU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLN6HVPVxjU=" general="AAAAAAFneLDyXFGe1lA="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLnn01QhYWs=" name="ContaCorrenteEspecial" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFneML8VF30smk=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLnn01QhYWs=" general="AAAAAAFneLLOt1M1LqI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLp6v1RtH0c=" name="ContaCorrenteNormal" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFneMNBMV5ut1E=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFneLp6v1RtH0c=" general="AAAAAAFneLLOt1M1LqI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFneLri8FS1ZxI=" name="TalaoCheque" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFneMP6gl+R5Js=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFneMP6gl+SR8U=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLri8FS1ZxI=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<ownedEnd xmi:id="AAAAAAFneMP6gl+TlOw=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFneLLOt1M1LqI=">
+						<xmi:Extension extender="StarUML">
+							<stereotype value=""/>
+						</xmi:Extension>
+					</ownedEnd>
+					<memberEnd xmi:idref="AAAAAAFneMP6gl+SR8U="/>
+					<memberEnd xmi:idref="AAAAAAFneMP6gl+TlOw="/>
+				</ownedMember>
+			</packagedElement>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

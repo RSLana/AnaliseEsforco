@@ -1,35 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package models;
+
 import java.util.ArrayList;
 
-/**
- *
- * @author raj
- */
 public class Classe {
-    
+
     private String id;
     private String nome;
     private int fi;
+    private boolean construida;
+    private int fit;
     private ArrayList<Classe> libera;
     private ArrayList<Classe> depende;
 
     public Classe(String id, String nome) {
         this.id = id;
         this.nome = nome;
+
         this.libera = new ArrayList();
         this.depende = new ArrayList();
+
     }
 
     public Classe() {
         this.libera = new ArrayList();
         this.depende = new ArrayList();
     }
-    
+
     public String getId() {
         return id;
     }
@@ -47,7 +43,25 @@ public class Classe {
     }
 
     public int getFi() {
-        return fi;
+        return libera.size();
+    }
+
+    public int getFit() {
+        if (!this.isConstruida()) {
+            fit = 0;
+            for (Classe c : depende) {
+                if (!c.isConstruida()) {
+                    fit += c.getFi();
+                }
+            }
+            return fit;
+        } else {
+            return -1;
+        }
+    }
+
+    public void setFit(int fit) {
+        this.fit = fit;
     }
 
     public void setFi(int fi) {
@@ -69,9 +83,16 @@ public class Classe {
     public void setDepende(ArrayList<Classe> depende) {
         this.depende = depende;
     }
-    
-    
-    
 
-    
+    public boolean isConstruida() {
+        return construida;
+    }
+
+    public void setConstruida() {
+        this.construida = true;
+    }
+
+    public void setNaoConstruida() {
+        this.construida = false;
+    }
 }
